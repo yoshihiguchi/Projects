@@ -1,0 +1,22 @@
+#  Weight Converter
+
+weight = float(input("Enter your weight: "))
+unit = input("Kilogram or Pounds? (K or L): ").upper()
+
+while True:
+    if unit == "K":
+        weight = round(weight * 2.2, 2)
+        print(f"Your converted weight is {weight}.")
+        break
+    elif unit == "L":
+        weight = round(weight * 0.45,2)
+        print(f"Your converted weight is {weight}.")
+        break
+    else:
+        print(f"{unit} is invalid.")
+        break
+
+
+
+
+    
